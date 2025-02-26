@@ -25,6 +25,9 @@ target/
 *.iml
 *.ipr
 
+### VS Code ###
+.vscode/
+
 ### JRebel ###
 rebel.xml
 ### NetBeans ###
@@ -44,3 +47,17 @@ nbdist/
 !*/build/*.java
 !*/build/*.html
 !*/build/*.xml
+
+######################################################################
+# Project Specific
+/docker/mysql/data/
+/docker/mysql/db/*.sql
+/docker/nacos/logs/
+/docker/ruoyi/**/jar/
+
+# 使用 ** 匹配所有子目录下的相应文件
+/docker/mongodb/data/
+/docker/mongodb/logs/
+/docker/minio/data/
+/docker/minio/config/
+/docker.zip
