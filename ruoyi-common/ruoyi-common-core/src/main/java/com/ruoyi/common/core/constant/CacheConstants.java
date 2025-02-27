@@ -56,4 +56,13 @@ public class CacheConstants
      * 登录IP黑名单 cache key
      */
     public static final String SYS_LOGIN_BLACKIPLIST = SYS_CONFIG_KEY + "sys.login.blackIPList";
+    /**
+     * APP用户登录令牌缓存前缀
+     */
+    public static final String APP_LOGIN_TOKEN_KEY = "app_login_tokens:";
+
+    /**
+     * APP用户刷新令牌缓存前缀
+     */
+    public static final String APP_REFRESH_TOKEN_KEY = "app_refresh_tokens:";
 }
