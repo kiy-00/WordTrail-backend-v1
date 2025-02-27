@@ -10,6 +10,7 @@ import com.ruoyi.common.security.utils.SecurityUtils;
 import com.ruoyi.system.api.RemoteAppUserService;
 import com.ruoyi.system.api.domain.AppUser;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 
@@ -19,6 +20,7 @@ import java.util.Map;
 @Service
 public class AppUserServiceImpl implements AppUserService {
 
+    @Qualifier("appTokenService")
     @Autowired
     private TokenServiceExtend tokenService;  // 使用扩展的TokenService
 

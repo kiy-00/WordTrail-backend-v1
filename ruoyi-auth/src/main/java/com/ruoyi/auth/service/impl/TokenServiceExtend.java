@@ -12,6 +12,7 @@ import com.ruoyi.common.security.service.TokenService;
 import com.ruoyi.system.api.domain.AppUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -22,6 +23,8 @@ import java.util.concurrent.TimeUnit;
  * APP令牌服务扩展
  */
 @Component
+// 在TokenServiceExtend类上
+@Service("appTokenService")
 public class TokenServiceExtend extends TokenService {
 
     @Autowired

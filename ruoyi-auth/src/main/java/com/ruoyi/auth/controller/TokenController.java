@@ -2,6 +2,7 @@ package com.ruoyi.auth.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,6 +24,7 @@ import com.ruoyi.system.api.model.LoginUser;
  * @author ruoyi
  */
 @RestController
+@Qualifier("tokenService")
 public class TokenController
 {
     @Autowired
